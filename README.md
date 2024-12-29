@@ -8,11 +8,15 @@ Shred files, where they are not retrievable anymore using Department of Defence 
 - Scramble file binary data by generating a new unique buffer 
   - This step is repeated as many as the user has chosen under the Cycle options.
 - Set file size to 0 bytes
-- Change the file attributes (Date Created) to 1985
-- Change the file attributes (Date Last Accessed) to 1985
-- Change the file attributes (Date Last Modified) to 1985
+- Change the file attributes (Date Created) to (Random year)
+- Change the file attributes (Date Last Accessed) to (Random year)
+- Change the file attributes (Date Last Modified) to (Random year)
 
 Files > 500 MBs will be skipped for performance reasons (files > 400 MBs with 5 Cycles can take up to 15 minutes)
+
+## Note: As-Tested: Files Deleted are not recoverable, even with Professional Data Recovery Software.
+  - Since the file is scrambled, it's impossible to open it (considered corrupted),
+  - If File shredding was interrupted, the file size will be set to 0 bytes, which makes it un-usable as well,
 
 ![image](https://github.com/user-attachments/assets/25da54be-adeb-44cd-8a36-bea781d84f91)
 
